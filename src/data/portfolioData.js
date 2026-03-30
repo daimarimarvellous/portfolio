@@ -1,6 +1,6 @@
 export const info = {
   name:     'Marvellous Daimari',
-  title:    'Cloud & Ful Stack Developer',
+  title:    'Cloud & Full Stack Developer',
   tagline:  'Passionate about building robust, scalable, and user-centric applications with modern web technologies and cloud solutions.',
   bio1:     'I am a dedicated web and cloud developer with hands-on experience in building robust and scalable applications. Currently pursuing my B.Tech in Cloud Technology & Information Security at Assam Downtown University.',
   bio2:     'My goal is to contribute to software development teams where I can leverage my skills to create impactful solutions while continuously learning and growing as a developer.',

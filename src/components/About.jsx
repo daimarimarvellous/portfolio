@@ -1,8 +1,6 @@
 import { info, about } from '../data/portfolioData';
 import styles from './About.module.css';
 
-// Drop your photo at: src/assets/profile.jpg
-// If no photo yet, the initials fallback shows instead
 let profilePhoto = null;
 try {
   profilePhoto = new URL('../assets/profile.jpg', import.meta.url).href;
