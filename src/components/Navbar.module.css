@@ -1,0 +1,79 @@
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 48px;
+  background: var(--bg-primary);
+  border-bottom: 1px solid var(--border);
+  backdrop-filter: blur(10px);
+}
+
+/* ── Logo ── */
+.logoWrap {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.logoWrap svg {
+  transition: transform 0.3s ease;
+  filter: drop-shadow(0 0 8px rgba(139,92,246,0.5));
+}
+
+.logoWrap:hover svg {
+  transform: rotate(15deg) scale(1.05);
+  filter: drop-shadow(0 0 14px rgba(139,92,246,0.8));
+}
+
+.logoText {
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+}
+
+.logoName {
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.5px;
+}
+
+.logoDot {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--purple);
+}
+
+/* ── Nav links ── */
+.links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: var(--text-sec);
+  font-size: 15px;
+  font-weight: 500;
+  font-family: var(--font);
+  cursor: pointer;
+  transition: color 0.15s;
+  padding: 0;
+}
+
+.link:hover { color: var(--purple-light); }
+
+@media (max-width: 600px) {
+  .nav { padding: 12px 20px; }
+  .links { gap: 16px; }
+  .link { font-size: 13px; }
+  .logoName { display: none; }
+  .logoDot  { display: none; }
+}
